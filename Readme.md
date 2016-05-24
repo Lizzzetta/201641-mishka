@@ -1,7 +1,7 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елизавета Каткова](https://up.htmlacademy.ru/adaptive/7/user/201641).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Гатилин](https://htmlacademy.ru/profile/id187233).
 
 ---
 
