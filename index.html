@@ -9,86 +9,76 @@
 <header class="page-header">
     <nav class="header-menu">
         <ul class="header-menu__list">
-            <li class="header-menu__list">
-                <a href="#">Каталог</a>
+            <li class="header-menu__item">
+                <a class="header-menu__item header-menu__item--catalog" href="#">Каталог</a>
             </li>
-            <li class="header-menu__list">
-                <a href="#">Вязание на заказ</a>
+            <li class="header-menu__item">
+                <a class="header-menu__item header-menu__item--knits" href="#">Вязание на заказ</a>
             </li>
-            <li class="header-menu__list">
-                <a href="#">Поиск по сайту</a>
+            <li class="header-menu__item">
+                <a class="header-menu__item header-menu__item--search" href="#">Поиск по сайту</a>
             </li>
-            <li class="header-menu__list">
-                <a href="#">Корзина: пока пуста</a>
+            <li class="header-menu__item">
+                <a class="header-menu__item header-menu__item--backet" href="#">Корзина: пока пуста</a>
             </li>
         </ul>
     </nav>
-    <a href="#">MISHKA</a>
+    <a class="header-menu__logo" href="#">MISHKA</a>
 </header>
 
 <main>
     <div class="main-header">
-        <h1 class="page-header__title">MISHKA - милые штучки ручной работы для дома</h1>
-        <img src="img" alt="Милые штучки">
-
-        <div class="main-header__objects">
-            <a href="#">Предметы интерьера</a>
-        </div>
-        <div class="main-header__games">
-            <a href="#">Детские игрушки</a>
-        </div>
+            <h1 class="main-header__title">MISHKA - милые штучки ручной работы для дома</h1>
+        <ul class="main-header__catalog-links">
+            <li class="catalog-link">
+                <a class="catalog-link__objects" href="#">Предметы интерьера <img src="img" alt="Декор"></a>
+            </li>
+            <li class="catalog-link">
+                <a class="catalog-link__games" href="#">Детские игрушки<img src="img" alt="Развлечения"></a>
+            </li>
+        </ul>
     </div>
     <div class="product">
-        <h2 class="product__name">Вязанные корзины</h2>
-
-        <p class="product__name product__name--merchantability">ТОВАР НЕДЕЛИ</p> /*нужно ли элементу задавать тип "аш"
+        <h2 class="section__title">Вязанные корзины</h2>
+        <p class="product__title">ТОВАР НЕДЕЛИ</p>
         <p class="product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
             размерах.</p>
         <ul class="product__options">
-            <li class="product__option">Цвет:</li>
-            <li class="product__option">"Тиффани"/серый</li>
-            <li class="product__option">Диаметр:</li>
-            <li class="product__option">25 см</li>
-            <li class="product__option">Высота:
-            <li>
-            <li class="product__option">15 см</li>
+            <li class="product__option"><span>Цвет:</span><span>"Тиффани"/серый</span></li>
+            <li class="product__option"><span>Диаметр:</span><span>25 см</span></li>
+            <li class="product__option"><span>Высота:</span><span>15 см</span></li>
         </ul>
         <img src="img" alt="Извините, изображение товара временно недоступно">
-
         <p class="product__price">990 руб.</p>
         <button class="order" type="submit">Заказать</button>
     </div>
     <div class="info">
-        <h2 class="info__title">Коротко о нас</h2>
+        <h2 class="section__title">Коротко о нас</h2>
         <ul class="info__list">
-            <li class="list__item"><img src="img" alt="***">Экологически чистые материалы</li>
-            <li class="list__item"><img src="img" alt="***">Скандинавский стиль по российской цене</li>
-            <li class="list__item"><img src="img" alt="***">Увеличивает лайки на фотографиях</li>
-            <li class="list__item"><img src="img" alt="***">Связано вручную с любовью и умилением</li>
-            <li class="list__item"><img src="img" alt="***">Поддержка отечественного производителя</li>
-            <li class="list__item"><img src="img" alt="***">Поставляется в подарочной упаковке</li>
+            <li class="info__item"><img src="img" alt="***"><span>Экологически чистые материалы</span></li>
+            <li class="info__item"><img src="img" alt="***"><span>Скандинавский стиль по российской цене</span></li>
+            <li class="info__item"><img src="img" alt="***"><span>Увеличивает лайки на фотографиях</span></li>
+            <li class="info__item"><img src="img" alt="***"><span>Связано вручную с любовью и умилением</span>></li>
+            <li class="info__item"><img src="img" alt="***"><span>Поддержка отечественного производителя</span></li>
+            <li class="info__item"><img src="img" alt="***"><span>Поставляется в подарочной упаковке</span>/li>
         </ul>
     </div>
     <div class="feedback">
-        <h3 class="feedback__title">Отзыв</h3>
-
+        <h2 class="section__title">Отзыв</h2>
         <p class="feedback__content">Я молодая мама, ...</p>
-
-        <h2 class="feedback__autor">Анастасия Красильникова</h2>
-        <a href="#">@misssssiskras</a>
-
-        <div class="feedback__buttons-panel">
-            <button class="feedback__button feedback__buttons--prev"><img src="img" alt="Предыдущий"></button>
-            <button class="feedback__button feedback__buttons--next"><img src="img" alt="Следующий"></button>
+        <h3 class="feedback__autor">Анастасия Красильникова</h3>
+        <a class="feedback__autor-email" href="#">@misssssiskras</a>
+        <div class="feedback__link-panel">
+            <a class="feedback__link feedback__link--prev" href="#"><img src="img" alt="Предыдущий"></a>
+            <a class="feedback__link feedback__link--next" href="#"><img src="img" alt="Следующий"></a>
         </div>
         <button class="order" type="submit">Написать</button>
     </div>
     <div class="contacts">
+        <h2 class="section__title">Контакты</h2>
         <ul class="contacts__adresses">
-            <li class="contacts__adress">e-mail:</li>
-            <li class="contacts__adress"><a href="http://info@mimimishkashop.ru">info@mimimishkashop.ru</a></li>
-            <li class="contacts__adress">адрес:</li>
-            <li class="contacts__adress">г. Санкт-Петербург ул. Большая Конюшенная,д. 19/8, офис 101</li>
+            <li class="contacts__email-adress"><span>e-mail:</span><span><a href="http://info@mimimishkashop.ru">info@mimimishkashop.ru</a></span></li>
+            <li class="contacts__postal-adress"><span>адрес:</span><span>г. Санкт-Петербург ул. Большая Конюшенная,д. 19/8, офис 101</span></li>
         </ul>
         <img src="img" alt="Извините, карта местности временно недоступна">
         <button class="order" type="submit">Напишите нам</button>
@@ -96,9 +86,9 @@
 </main>
 
 <footer class="page-footer">
-    <a href="#"><img src="img" alt="Инстаграм"></a>
-    <a href="#"><img src="img" alt="Фейсбук"></a>
-    <a href="#"><img src="img" alt="Твиттер"></a>
+    <a class="page-footer__link" href="#"><img src="img" alt="Инстаграм"></a>
+    <a class="page-footer__link" href="#"><img src="img" alt="Фейсбук"></a>
+    <a class="page-footer__link" href="#"><img src="img" alt="Твиттер"></a>
 </footer>
 
 </body>

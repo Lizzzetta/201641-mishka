@@ -9,24 +9,24 @@
 <header class="page-header">
     <nav class="header-menu">
         <ul class="header-menu__list">
-            <li class="header-menu__list">
-                <a href="#">Каталог</a>
+            <li class="header-menu__item">
+                <a class="header-menu__item header-menu__item--catalog" href="#">Каталог</a>
             </li>
-            <li class="header-menu__list">
-                <a href="#">Вязание на заказ</a>
+            <li class="header-menu__item">
+                <a class="header-menu__item header-menu__item--knits" href="#">Вязание на заказ</a>
             </li>
-            <li class="header-menu__list">
-                <a href="#">Поиск по сайту</a>
+            <li class="header-menu__item">
+                <a class="header-menu__item header-menu__item--search" href="#">Поиск по сайту</a>
             </li>
-            <li class="header-menu__list">
-                <a href="#">Корзина: пока пуста</a>
+            <li class="header-menu__item">
+                <a class="header-menu__item header-menu__item--backet" href="#">Корзина: пока пуста</a>
             </li>
         </ul>
     </nav>
-    <a href="#">MISHKA</a>
+    <a class="header-menu__logo" href="#">MISHKA</a>
 </header>
 
-<main>
+<main class="main-header">
     <h1 class="main-header__title">Каталог товаров</h1>
     <ul class="products">
         <li class=product>
@@ -60,7 +60,7 @@
             <button type="submit" name="order" value="order"><img src="img" alt="Корзина"></button>
         </li>
     </ul>
-    <div class="product__process">
+    <div class="process">
         <h2 class="process__title"><img src="img" alt="***">Процесс производства</h2>
         <a href="#"><img src="img" alt="Извините, в данный момент воспроизведение видео временно недоступно"></a>
 
@@ -71,10 +71,9 @@
 </main>
 
 <footer class="page-footer">
-    <a href="#"><img src="img" alt="Инстаграм"></a>
-    <a href="#"><img src="img" alt="Фейсбук"></a>
-    <a href="#"><img src="img" alt="Твиттер"></a>
-
+    <a class="page-footer__link" href="#"><img src="img" alt="Инстаграм"></a>
+    <a class="page-footer__link" href="#"><img src="img" alt="Фейсбук"></a>
+    <a class="page-footer__link" href="#"><img src="img" alt="Твиттер"></a>
     <p class="developer">Разработано</p>
     <img src="img" alt="HTML-academy">
 </footer>
