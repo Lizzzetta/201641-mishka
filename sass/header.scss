@@ -1,0 +1,41 @@
+.page-header {
+  background: #ffffff;
+  .header-menu {
+    font-family: opensans;
+    font-weight: bold;
+    font-size: 14px;
+    .header-menu__list {
+      margin: 0;
+      .header-menu__item {
+        list-style-type: none;
+        padding: 20px;
+        .header-menu__link {
+          text-decoration: none;
+          color: #000000;
+          :visited {
+            color: #000000;
+          }
+          :link {
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+  .page-header__logo {
+    .page-header__logo-image {
+    }
+  }
+}
+
+li.header-menu__item:nth-child(3) {
+  list-style-image: url(/img/icon-search.svg);
+}
+li.header-menu__item:nth-child(4) {
+  list-style-image: url(/img/icon-cart.svg);
+}
+
+
+
+
+
