@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<header class="page-header">
+    <nav class="header-menu">
+        <ul class="header-menu__list">
+            <li class="header-menu__item">
+                <a class="header-menu__link header-menu__link--catalog" href="#">Каталог</a>
+            </li>
+            <li class="header-menu__item">
+                <a class="header-menu__link header-menu__link--knits" href="#">Вязание на заказ</a>
+            </li>
+            <li class="header-menu__item">
+                <a class="header-menu__link header-menu__link--search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="header-menu__item">
+                <a class="header-menu__link header-menu__link--bucket" href="#">Корзина: пока пуста</a>
+            </li>
+        </ul>
+    </nav>
+    <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img" alt="MISHKA"></a>
+</header>
 
-  </body>
+<main>
+    <div class="main-header">
+            <h1 class="main-header__title">MISHKA - милые штучки ручной работы для дома</h1>
+        <ul class="catalog-links">
+            <li class="catalog-link">
+                <a class="catalog-link__objects" href="#">Предметы интерьера <img class="catalog-link__image" src="img" alt=""></a>
+            </li>
+            <li class="catalog-link">
+                <a class="catalog-link__games" href="#">Детские игрушки<img class="catalog-link__image" src="img" alt=""></a>
+            </li>
+        </ul>
+    </div>
+    <div class="product">
+        <h2 class="section-title">Вязанные корзины</h2>
+        <span class="product__title">ТОВАР НЕДЕЛИ</span>
+        <p class="product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+            размерах.</p>
+        <ul class="product__options">
+            <li class="product__option"><span class="product__option-name">Цвет:</span><span class="product__option-value">"Тиффани"/серый</span></li>
+            <li class="product__option"><span class="product__option-name">Диаметр:</span><span class="product__option-value">25 см</span></li>
+            <li class="product__option"><span class="product__option-name">Высота:</span><span class="product__option-value">15 см</span></li>
+        </ul>
+        <img class="product__image" src="img" alt="">
+        <p class="product__price">990 руб.</p>
+        <button class="order" type="submit">Заказать</button>
+    </div>
+    <div class="info">
+        <h2 class="section-title">Коротко о нас</h2>
+        <ul class="info__list">
+            <li class="info__item"><img class="info__image" src="img" alt=""><span class="info__text">Экологически чистые материалы</span></li>
+            <li class="info__item"><img class="info__image" src="img" alt=""><span class="info__text">Скандинавский стиль по российской цене</span></li>
+            <li class="info__item"><img class="info__image" src="img" alt=""><span class="info__text">Увеличивает лайки на фотографиях</span></li>
+            <li class="info__item"><img class="info__image" src="img" alt=""><span class="info__text">Связано вручную с любовью и умилением</span>></li>
+            <li class="info__item"><img class="info__image" src="img" alt=""><span class="info__text">Поддержка отечественного производителя</span></li>
+            <li class="info__item"><img class="info__image" src="img" alt=""><span class="info__text">Поставляется в подарочной упаковке</span>/li>
+        </ul>
+    </div>
+    <div class="feedback">
+        <h2 class="section-title">Отзыв</h2>
+        <p class="feedback__content">Я молодая мама, ...</p>
+        <h3 class="feedback__autor">Анастасия Красильникова</h3>
+        <a class="feedback__autor-email" href="#">@misssssiskras</a>
+        <div class="feedback__link-panel">
+            <a class="feedback__link feedback__link--prev" href="#"><img class="feedback__navigation" src="img" alt=""></a>
+            <a class="feedback__link feedback__link--next" href="#"><img class="feedback__navigation" src="img" alt=""></a>
+        </div>
+        <button class="order" type="submit">Написать</button>
+    </div>
+    <div class="contacts">
+        <h2 class="section-title">Контакты</h2>
+        <ul class="contacts__addresses">
+            <li class="contacts__email-address"><span class="contacts__details">e-mail:</span><span class="contacts__details"><a href="http://info@mimimishkashop.ru">info@mimimishkashop.ru</a></span></li>
+            <li class="contacts__postal-address"><span class="contacts__details">адрес:</span><span class="contacts__details">г. Санкт-Петербург ул. Большая Конюшенная,д. 19/8, офис 101</span></li>
+        </ul>
+        <img class="map__image" src="img" alt="">
+        <button class="order" type="submit">Напишите нам</button>
+    </div>
+</main>
+
+<footer class="page-footer">
+    <a class="page-footer__link" href="#"><img class="social" src="img" alt=""></a>
+    <a class="page-footer__link" href="#"><img class="social" src="img" alt=""></a>
+    <a class="page-footer__link" href="#"><img class="social" src="img" alt=""></a>
+</footer>
+
+</body>
 </html>
+
+

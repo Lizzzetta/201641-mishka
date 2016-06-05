@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+</head>
+<body>
+
+<header class="page-header">
+    <nav class="header-menu">
+        <ul class="header-menu__list">
+            <li class="header-menu__item">
+                <a class="header-menu__link header-menu__link--catalog" href="#">Каталог</a>
+            </li>
+            <li class="header-menu__item">
+                <a class="header-menu__link header-menu__link--knits" href="#">Вязание на заказ</a>
+            </li>
+            <li class="header-menu__item">
+                <a class="header-menu__link header-menu__link--search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="header-menu__item">
+                <a class="header-menu__link header-menu__link--bucket" href="#">Корзина: пока пуста</a>
+            </li>
+        </ul>
+    </nav>
+    <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img" alt="MISHKA"></a>
+</header>
+
+<main class="form-order">
+    <h1 class="form-order__title">Вязание на заказ</h1>
+    <p class="form-order__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы
+        свяжемся с вами, чтобы уточнить детали.</p>
+    <div class="form-order__type">
+        <p class="form-order__title-type">Тип</p>
+        <ul class="form-order__type-list">
+            <li class="form-order__type-item">
+                <label class="form-order__type-radiobutton">
+                <input name="type" type="radio" class="form-order__radiobtn form-order__radiobtn--accessories">
+                <span class="form-order__label">Аксессуар для интерьера</span>
+                </label>
+            </li>
+            <li class="form-order__type-item">
+                <label class="form-order__type-radiobutton">
+                <input name="type" type="radio" class="form-order__radiobtn form-order__radiobtn--game">
+                <span class="form-order__label">Детская игрушка</span>
+                </label>
+            </li>
+        </ul>
+    </div>
+    <div class="form-order__color">
+        <p class="form-order__title-color">Цвет</p>
+        <ul class="form-order__color-list">
+            <li class="form-order__color-item">
+                <label class="form-order__checkbox">
+                <input name="color" type="checkbox" class="form-order__checkbox form-order__checkbox--white">
+                <span class="form-order__checkbox">Белый</span>
+                </label>
+            </li>
+            <li class="form-order__color-item">
+                <label class="form-order__checkbox">
+                <input name="color" type="checkbox" class="form-order__checkbox form-order__checkbox--gray">
+                <span class="form-order__checkbox">Серый</span>
+                </label>
+            </li>
+            <li class="form-order__color-item">
+                <label class="form-order__checkbox">
+                <input name="color" type="checkbox" class="form-order__checkbox form-order__checkbox--tiffany">
+                <span class="form-order__checkbox">"Тиффани"</span>
+                </label>
+            </li>
+            <li class="form-order__color-item">
+                <label class="form-order__checkbox">
+                <input name="color" type="checkbox" class="form-order__checkbox form-order__checkbox--black">
+                <span class="form-order__checkbox">Черный</span>
+                </label>
+            </li>
+            <li class="form-order__color-item">
+                <label class="form-order__checkbox">
+                <input name="color" type="checkbox" class="form-order__checkbox form-order__checkbox--pink">
+                <span class="form-order__checkbox">Розовый</span>
+                </label>
+            </li>
+            <li class="form-order__color-item">
+                <label class="form-order__checkbox">
+                <input name="color" type="checkbox" class="form-order__checkbox form-order__checkbox--orange">
+                <span class="form-order__checkbox">Оранжевый</span>
+                </label>
+            </li>
+        </ul>
+    </div>
+    <div class="form-order__initials">
+        <p class="form-order__title-initials">ФИО</p>
+        <ul class="form-order__initials-list">
+            <li class="form-order__initials-item">
+            <label class="form-order__surname" for="surname">Фамилия:</label>
+            <input type="text" id="surname" placeholder="Укажите фамилию">
+        </li>
+        <li class="form-order__initials-item">
+            <label class="form-order__name" for="name">Имя: </label>
+            <input type="text" id="name" placeholder="Укажите имя">
+        </li>
+        <li class="form-order__initials-item">
+            <label class="form-order__patronymicname" for="patronymicname">Отчество:</label>
+            <input type="text" id="patronymicname" placeholder="Укажите отчество">
+        </li>
+        </ul>
+    </div>
+    <div class="form-order__tel">
+        <p class="form-order__title-tel">ТЕЛ</p>
+        <ul class="form-order__tel-list">
+            <li class="form-order__tel-item">
+                <label class="form-order__number" for="tel"></label>
+                <input type="tel" id="tel" placeholder="+7 XXX XX XX"><img class="field-icon" src="img" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="form-order__email">
+        <p class="form-order__title-email">E-MAIL</p>
+        <ul class="form-order__email-list">
+            <li class="form-order__email-item">
+                <label class="form-order__email" for="email"></label>
+                <input type="email" id="email" placeholder="Ваш e-mail"><img class="field-icon" src="img" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="form-order__additional">
+        <p class="form-order__title-additional">ДОП</p>
+        <label class="form-order__additional" for="additional"></label>
+        <textarea class="form-order__details" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+    </div>
+        <button class="order" type="submit">Отправить заказ</button>
+</main>
+
+<footer class="page-footer">
+    <a class="page-footer__link" href="#"><img class="social" src="img" alt=""></a>
+    <a class="page-footer__link" href="#"><img class="social" src="img" alt=""></a>
+    <a class="page-footer__link" href="#"><img class="social" src="img" alt=""></a>
+    <p class="developer">Разработано</p>
+    <img class="developer-logo" src="img" alt="HTML-academy">
+</footer>
+
+</body>
+</html>
