@@ -1,0 +1,30 @@
+$grey-color: #F1F1F1;
+$green-color: #63D1BB;
+
+.form-order {
+  background: #ffffff;
+  .form-order__title-wrapper {
+    background-color: $grey-color;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .form-order__title-type,
+  .form-order__title-color,
+  .form-order__title-initials,
+  .form-order__title-tel,
+  .form-order__email,
+  .form-order__additional
+  {
+    color: $green-color;
+    font-weight: bold;
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+    font-weight: bold;
+    label {
+      display: block;
+    }
+  }
+}

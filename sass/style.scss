@@ -4,5 +4,17 @@
 }
 
 @import "header";
+@import "main-header";
+@import "product";
+@import "info";
+@import "feedback";
+@import "contacts";
+@import "page-footer";
 
-body { background: blue; }
+@import "form-order";
+
+@import "catalog-header";
+
+body {
+  font-family: opensans;
+  background: blue; }
