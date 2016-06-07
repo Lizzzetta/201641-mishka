@@ -1,7 +1,7 @@
-@font-face {
-  font-family: opensans;
-  src: url(/fonts/opensans.woff);
-}
+@import "variables";
+
+@import "font";
+@import "main";
 
 @import "header";
 @import "main-header";
@@ -14,7 +14,3 @@
 @import "form-order";
 
 @import "catalog-header";
-
-body {
-  font-family: opensans;
-  background: blue; }

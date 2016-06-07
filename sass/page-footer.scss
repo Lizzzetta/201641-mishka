@@ -1,12 +1,11 @@
-$footer-color: #F1F1F1;
-
 .page-footer {
-  background-color: $footer-color;
+  background-color: $gray-color;
   text-align: center;
-  .page-footer__link {
-    margin: 0 10px;
-  }
-  .developer-logo {
-    margin-left: 10px;
-  }
+}
+
+.page-footer__link {
+  margin: 0 10px;
+}
+.developer-logo {
+  margin-left: 10px;
 }
