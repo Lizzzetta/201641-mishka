@@ -1,0 +1,32 @@
+.form-order {
+  background: #ffffff;
+}
+
+.form-order__type-list,
+.form-order__color-list,
+.form-order__initials-list,
+.form-order__tel-list,
+.form-order__email-list{
+  padding: 0;
+  list-style-type: none;
+  font-weight: bold;
+  label {
+    display: block;
+  }
+}
+
+.form-order__title-wrapper {
+  background-color: $gray-color;
+  padding: 60px 20px;
+  text-align: center;
+}
+.form-order__title-type,
+.form-order__title-color,
+.form-order__title-initials,
+.form-order__title-tel,
+.form-order__email,
+.form-order__additional
+{
+  color: $base-color;
+  font-weight: bold;
+}

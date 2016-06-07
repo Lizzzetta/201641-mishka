@@ -3,66 +3,69 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
 <header class="page-header">
     <nav class="header-menu">
         <ul class="header-menu__list">
-            <li class="header-menu__item">
+            <li class="header-menu__item header-menu__item--catalog">
                 <a class="header-menu__link header-menu__link--catalog" href="#">Каталог</a>
             </li>
-            <li class="header-menu__item">
+            <li class="header-menu__item header-menu__item--knits">
                 <a class="header-menu__link header-menu__link--knits" href="#">Вязание на заказ</a>
             </li>
-            <li class="header-menu__item">
+            <li class="header-menu__item header-menu__item--search">
                 <a class="header-menu__link header-menu__link--search" href="#">Поиск по сайту</a>
             </li>
-            <li class="header-menu__item">
-                <a class="header-menu__link header-menu__link--bucket" href="#">Корзина: пока пуста</a>
+            <li class="header-menu__item header-menu__item--cart">
+                <a class="header-menu__link header-menu__link--cart" href="#">Корзина: пока пуста</a>
             </li>
         </ul>
     </nav>
-    <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img" alt="MISHKA"></a>
+    <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img/logo-mobile.svg" alt="MISHKA"></a>
 </header>
 
-<main class="main-header">
-    <h1 class="main-header__title">Каталог товаров</h1>
+<main class="catalog-header">
+    <div class="catalog-header__title-wrapper">
+        <h1 class="catalog-header__title">Каталог товаров</h1>
+    </div>
     <ul class="products">
         <li class=product>
-            <img class="product__image" src="img" alt="">
+            <img class="product__image" src="img/photo-1-mobile@1x.jpg" alt="">
 
             <h2 class="product__name product__name--catalog">Зайчик-попрыгайчик</h2>
 
             <p class="product__options product__options--catalog">Рост 30 см, вес 200 гр</p>
 
             <p class="product__price product__price--catalog">1200 руб</p>
-            <button type="submit"><img class="submit__icon" src="img" alt=""></button>
+            <button type="submit"><img class="submit__icon" src="img/icon-cart.svg" alt=""></button>
         </li>
         <li class=product>
-            <img class="product__image" src="img" alt="">
+            <img class="product__image" src="img/photo-2-mobile@1x.jpg" alt="">
 
             <h2 class="product__name product__name--catalog">Корзинка для белья</h2>
 
             <p class="product__options product__options--catalog">Диаметр 15 см, высота 10 см</p>
 
             <p class="product__price product__price--catalog">690 руб.</p>
-            <button type="submit"><img class="submit__icon" src="img" alt=""></button>
+            <button type="submit"><img class="submit__icon" src="img/icon-cart.svg" alt=""></button>
         </li>
         <li class=product>
-            <img class="product__image" src="img" alt="">
+            <img class="product__image" src="img/photo-3-mobile@1x.jpg" alt="">
 
             <h2 class="product__name product__name--catalog">Большая корзинка для игрушек</h2>
 
             <p class="product__options product__options--catalog">Диаметр 30 см, высота 30 см</p>
 
             <p class="product__price product__price--catalog">1500 руб.</p>
-            <button type="submit"><img class="submit__icon" src="img" alt=""></button>
+            <button type="submit"><img class="submit__icon" src="img/icon-cart.svg" alt=""></button>
         </li>
     </ul>
     <div class="process">
-        <h2 class="process__title"><img class="process__title-icon" src="img" alt="">Процесс производства</h2>
-        <a href="#"><img class="process__image" src="img" alt=""></a>
+        <h2 class="process__title"><img class="process__title-icon" src="img/icon-video.svg" alt="">Процесс производства</h2>
+        <a href="#"><img class="process__image" src="img/video-mobile@1x.jpg" alt=""></a>
 
         <p class="process__desc">Пo просьбам наших любых фолловеров мы сняли для вас подробное
             видео о том, как появляются наши товары.</p>
@@ -71,11 +74,10 @@
 </main>
 
 <footer class="page-footer">
-    <a class="page-footer__link" href="#"><img class="social" src="img" alt=""></a>
-    <a class="page-footer__link" href="#"><img class="social" src="img" alt=""></a>
-    <a class="page-footer__link" href="#"><img class="social" src="img" alt=""></a>
-    <p class="developer">Разработано</p>
-    <img class="developer-logo" src="img" alt="HTML-academy">
+    <a class="page-footer__link" href="#"><img class="social" src="img/icon-insta.svg" alt=""></a>
+    <a class="page-footer__link" href="#"><img class="social" src="img/icon-fb.svg" alt=""></a>
+    <a class="page-footer__link" href="#"><img class="social" src="img/icon-twitter.svg" alt=""></a>
+    <p class="developer-text">Разработано<img class="developer-logo" src="img/logo-htmlacademy.svg" alt="HTML-academy"></p>
 </footer>
 
 </body>
