@@ -1,6 +1,16 @@
 .page-footer {
   background-color: $gray-color;
   text-align: center;
+
+  @media #{$tablet-widths} {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .developer-text {
+      display: flex;
+    }
+  }
 }
 
 .page-footer__link {

@@ -1,5 +1,39 @@
 .contacts {
   background: #ffffff;
+
+  @media #{$tablet-widths} {
+    display: flex;
+    flex-direction: column;
+    .contacts__addresses {
+      display: flex;
+    }
+
+    .contacts__address {
+      width: 50%;
+    }
+
+    .map__image,
+    .contacts-order{
+      align-self: center;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    height: 500px;
+    flex-wrap: wrap;
+
+    .contacts__addresses {
+      flex-direction: column;
+    }
+
+    .contacts__address {
+      width: 100%;
+    }
+
+    .contacts-order {
+      align-self: flex-start;
+    }
+  }
 }
 .contacts__addresses {
   padding: 0;

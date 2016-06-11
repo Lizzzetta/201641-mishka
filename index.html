@@ -8,6 +8,7 @@
 <body>
 
 <header class="page-header">
+    <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img/logo-mobile.svg" alt="MISHKA"></a>
     <nav class="header-menu">
         <ul class="header-menu__list">
             <li class="header-menu__item header-menu__item--catalog">
@@ -17,19 +18,18 @@
                 <a class="header-menu__link header-menu__link--knits" href="#">Вязание на заказ</a>
             </li>
             <li class="header-menu__item header-menu__item--search">
-                <a class="header-menu__link header-menu__link--search" href="#">Поиск по сайту</a>
+                <a class="header-menu__link header-menu__link--search" href="#"><span class="header-menu__link--search--text-wrapper">Поиск по сайту</span></a>
             </li>
             <li class="header-menu__item header-menu__item--cart">
                 <a class="header-menu__link header-menu__link--cart" href="#">Корзина: пока пуста</a>
             </li>
         </ul>
     </nav>
-    <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img/logo-mobile.svg" alt="MISHKA"></a>
 </header>
 
 <main>
     <div class="main-header">
-            <h1 class="main-header__title">Милые штучки ручной работы для дома</h1>
+        <h1 class="main-header__title">Милые штучки ручной работы для дома</h1>
         <ul class="catalog__list">
             <li class="catalog__item catalog__item--objects">
                 <a class="catalog__link catalog__link--objects" href="#">Предметы интерьера <img class="catalog-link__image" src=img/icon-interior.svg alt=""></a>
@@ -42,16 +42,15 @@
     <div class="product">
         <h2 class="section-title">Вязанные корзины</h2>
         <span class="product__title">ТОВАР НЕДЕЛИ</span>
-        <p class="product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
-            размерах.</p>
         <ul class="product__options">
+            <li class="product__option">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</li>
             <li class="product__option"><span class="product__option-name">Цвет:</span><span class="product__option-value">"Тиффани"/серый</span></li>
             <li class="product__option"><span class="product__option-name">Диаметр:</span><span class="product__option-value">25 см</span></li>
             <li class="product__option"><span class="product__option-name">Высота:</span><span class="product__option-value">15 см</span></li>
         </ul>
         <img class="product__image" src="img/triple-set-mobile@1x.jpg" alt="">
         <p class="product__price">Цена: 990 руб.</p>
-        <button class="order" type="submit">Заказать</button>
+        <button class="product__order" type="submit">Заказать</button>
     </div>
     <div class="info">
         <h2 class="section-title">Коротко о нас:</h2>
@@ -73,16 +72,16 @@
             <a class="feedback__link feedback__link--prev" href="#"><img class="feedback__navigation" src="img/icon-left-arrow.svg" alt=""></a>
             <a class="feedback__link feedback__link--next" href="#"><img class="feedback__navigation" src="img/icon-right-arrow.svg" alt=""></a>
         </div>
-        <button class="order" type="submit">Написать</button>
+        <button class="feedback-order" type="submit">Написать</button>
     </div>
     <div class="contacts">
         <h2 class="section-title">Контакты</h2>
         <ul class="contacts__addresses">
-            <li class="contacts__email-address"><span class="contacts__details-name">e-mail:</span><span class="contacts__details-value"><a class="contacts__email" href="http://info@mimimishkashop.ru">info@mimimishkashop.ru</a></span></li>
-            <li class="contacts__postal-address"><span class="contacts__details-name">адрес:</span><span class="contacts__details-value">г. Санкт-Петербург ул. Большая Конюшенная,д. 19/8, офис 101</span></li>
+            <li class="contacts__address contacts__email-address"><span class="contacts__details-name">e-mail:</span><span class="contacts__details-value"><a class="contacts__email" href="http://info@mimimishkashop.ru">info@mimimishkashop.ru</a></span></li>
+            <li class="contacts__address contacts__postal-address"><span class="contacts__details-name">адрес:</span><span class="contacts__details-value">г. Санкт-Петербург ул. Большая Конюшенная,д. 19/8, офис 101</span></li>
         </ul>
         <img class="map__image" src="img/map-mobile@1x.jpg" alt="">
-        <button class="order" type="submit">Напишите нам</button>
+        <button class="contacts-order" type="submit">Напишите нам</button>
     </div>
 </main>
 
@@ -90,7 +89,7 @@
     <a class="page-footer__link" href="#"><img class="social" src="img/icon-insta.svg" alt=""></a>
     <a class="page-footer__link" href="#"><img class="social" src="img/icon-fb.svg" alt=""></a>
     <a class="page-footer__link" href="#"><img class="social" src="img/icon-twitter.svg" alt=""></a>
-    <p class="developer-text">Разработано<img class="developer-logo" src="img/logo-htmlacademy.svg" alt="HTML-academy"></p>
+    <div class="developer-text">Разработано<img class="developer-logo" src="img/logo-htmlacademy.svg" alt="HTML-academy"></div>
 
 </footer>
 

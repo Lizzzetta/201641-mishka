@@ -1,7 +1,15 @@
-$base-color: #63D1BB;
-
 .info {
   background: #ffffff;
+
+  @media #{$tablet-widths} {
+    .info__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .info__item {
+      width: 50%;
+    }
+  }
 }
 
 .info__list {

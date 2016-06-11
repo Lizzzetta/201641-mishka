@@ -1,6 +1,42 @@
 .product {
   padding: 30px;
   background: #ffffff;
+
+  @media #{$tablet-widths} {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .section-title {
+      align-self: flex-start;
+    }
+    .product__title {
+      align-self: flex-end;
+    }
+    .product__options {
+      align-self: flex-start;
+    }
+    .product__image {
+      align-self: flex-end;
+    }
+    .product__price {
+      align-self: flex-start;
+    }
+    .product__order {
+      align-self: flex-start;
+      position: relative;
+      right: inherit;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    .section-title {
+      align-self: center;
+    }
+    .product__title {
+      align-self: flex-start;
+    }
+  }
 }
 
 .section-title {
