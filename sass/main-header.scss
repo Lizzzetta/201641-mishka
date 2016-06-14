@@ -36,3 +36,24 @@
 .catalog__item--toys {
   background-color: $additional-color;
 }
+@media #{$tablet-widths} {
+  .catalog__list {
+    //width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .catalog__item {
+    width: 50%;
+    padding: 0;
+    height: 100px;
+    display: flex;
+  }
+  .catalog__link {
+    margin: 30px;
+    width: 100%;
+  }
+}
+
+@media #{$desktop-widths} {
+
+}

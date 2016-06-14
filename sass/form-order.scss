@@ -6,7 +6,8 @@
 .form-order__color-list,
 .form-order__initials-list,
 .form-order__tel-list,
-.form-order__email-list{
+.form-order__email-list,
+.form-order__additional-list{
   padding: 0;
   list-style-type: none;
   font-weight: bold;
@@ -20,13 +21,85 @@
   padding: 60px 20px;
   text-align: center;
 }
+
 .form-order__title-type,
 .form-order__title-color,
 .form-order__title-initials,
 .form-order__title-tel,
 .form-order__email,
-.form-order__additional
-{
+.form-order__additional {
   color: $base-color;
   font-weight: bold;
+}
+
+@media #{$tablet-widths} {
+  .form-order__type {
+    height: 100px;
+  }
+
+  .form-order__type-list {
+    display: table;
+  }
+
+  .form-order__color-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-order__color-item {
+    width: 50%;
+  }
+
+  .form-order__initials-list,
+  .form-order__tel-list,
+  .form-order__email-list,
+  .form-order__additional-list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-order__initials-item,
+  .form-order__tel-item,
+  .form-order__email-item{
+    display: flex;
+    width: 100%;
+    div {
+      width: 100%;
+    }
+    input {
+      width: 100%;
+    }
+  }
+
+  .form-order__number-wrapper,
+  .form-order__email-wrapper{
+    display: flex;
+  }
+
+  .form-order__additional {
+    textarea {
+      width: 100%;
+    }
+  }
+
+  .form-order__title-type,
+  .form-order__title-color,
+  .form-order__title-initials,
+  .form-order__title-tel,
+  .form-order__title-email,
+  .form-order__title-additional {
+    float: left;
+    margin: 0;
+    width: 120px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .form-order__color-item {
+    width: 33%;
+  }
+
+  .order {
+    margin-left: 120px;
+  }
 }
