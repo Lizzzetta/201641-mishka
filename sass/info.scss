@@ -1,5 +1,3 @@
-$base-color: #63D1BB;
-
 .info {
   background: #ffffff;
 }
@@ -16,4 +14,13 @@ $base-color: #63D1BB;
   display: inline-block;
   font-weight: bold;
   font-size: 18px;
+}
+@media #{$tablet-widths} {
+  .info__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .info__item {
+    width: 50%;
+  }
 }

@@ -17,3 +17,26 @@
 .feedback__link {
   margin: 0 30px;
 }
+@media #{$tablet-widths} {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .section-title,
+  .feedback__content,
+  .feedback__autor{
+    width: 100%;
+  }
+
+  .feedback__autor-email {
+    width: 50%;
+  }
+
+  .feedback__link-panel {
+    padding: 0;
+  }
+
+  .feedback-order {
+    align-self: flex-end;
+  }
+}
