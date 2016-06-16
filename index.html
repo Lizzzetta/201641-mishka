@@ -35,16 +35,16 @@
         <h1 class="main-header__title">Милые штучки ручной работы для дома</h1>
         <ul class="catalog__list">
             <li class="catalog__item catalog__item--objects">
-                <a class="catalog__link catalog__link--objects" href="#">Предметы интерьера <img class="catalog-link__image" src=img/icon-interior.svg alt=""></a>
+                <a class="catalog__link catalog__link--objects" href="#"><span class="catalog__link-text-wrapper">Предметы интерьера</span><img class="catalog-link__image" src=img/icon-interior.svg alt=""></a>
             </li>
             <li class="catalog__item catalog__item--toys">
-                <a class="catalog__link catalog__link--toys" href="#">Детские игрушки<img class="catalog-link__image" src="img/icon-toy.svg" alt=""></a>
+                <a class="catalog__link catalog__link--toys" href="#"><span class="catalog__link-text-wrapper">Детские игрушки</span><img class="catalog-link__image" src="img/icon-toy.svg" alt=""></a>
             </li>
         </ul>
     </div>
     <div class="product">
         <div class="product-title__wrapper">
-            <h2 class="section-title">Вязанные корзины</h2>
+            <h2 class="section-title">Вязаные корзинки</h2>
             <span class="product__title">ТОВАР НЕДЕЛИ</span>
         </div>
         <div class="product-details__wrapper">
@@ -56,38 +56,44 @@
             </ul>
             <img class="product__image" src="img/triple-set-mobile@1x.jpg" alt="">
         </div>
-        <p class="product__price">Цена: 990 руб.</p>
-        <button class="product__order" type="submit">Заказать</button>
+        <div class="product__order-wrapper">
+            <p class="product__price">Цена: 990 руб.</p>
+            <button class="product__order" type="submit">Заказать</button>
+        </div>
     </div>
     <div class="info">
         <h2 class="section-title">Коротко о нас:</h2>
         <ul class="info__list">
-            <li class="info__item"><img class="info__image" src="img/icon-feature-1.svg" alt=""><span class="info__text">Экологически чистые материалы</span></li>
-            <li class="info__item"><img class="info__image" src="img/icon-feature-3.svg" alt=""><span class="info__text">Скандинавский стиль по российской цене</span></li>
-            <li class="info__item"><img class="info__image" src="img/icon-feature-5.svg" alt=""><span class="info__text">Увеличивает лайки на фотографиях</span></li>
-            <li class="info__item"><img class="info__image" src="img/icon-feature-2.svg" alt=""><span class="info__text">Связано вручную с любовью и умилением</span></li>
-            <li class="info__item"><img class="info__image" src="img/icon-feature-4.svg" alt=""><span class="info__text">Поддержка отечественного производителя</span></li>
-            <li class="info__item"><img class="info__image" src="img/icon-feature-6.svg" alt=""><span class="info__text">Поставляется в подарочной упаковке</span></li>
+            <li class="info__item"><div class="info__image-wrapper"><img class="info__image" src="img/icon-feature-1.svg" alt=""></div><span class="info__text">Экологически чистые материалы</span></li>
+            <li class="info__item"><div class="info__image-wrapper"><img class="info__image" src="img/icon-feature-3.svg" alt=""></div><span class="info__text">Скандинавский стиль по российской цене</span></li>
+            <li class="info__item"><div class="info__image-wrapper"><img class="info__image" src="img/icon-feature-5.svg" alt=""></div><span class="info__text">Увеличивает лайки на фотографиях</span></li>
+            <li class="info__item"><div class="info__image-wrapper"><img class="info__image" src="img/icon-feature-2.svg" alt=""></div><span class="info__text">Связано вручную с любовью и умилением</span></li>
+            <li class="info__item"><div class="info__image-wrapper"><img class="info__image" src="img/icon-feature-4.svg" alt=""></div><span class="info__text">Поддержка отечественного производителя</span></li>
+            <li class="info__item"><div class="info__image-wrapper"><img class="info__image" src="img/icon-feature-6.svg" alt=""></div><span class="info__text">Поставляется в подарочной упаковке</span></li>
         </ul>
     </div>
     <div class="feedback">
-        <h2 class="section-title">Отзыв</h2>
-        <p class="feedback__content">Я молодая мама, ...</p>
-        <h3 class="feedback__autor">Анастасия Красильникова</h3>
-        <a class="feedback__autor-email" href="#">@misssssiskras</a>
-        <div class="feedback__link-panel">
-            <a class="feedback__link feedback__link--prev" href="#"><img class="feedback__navigation" src="img/icon-left-arrow.svg" alt=""></a>
-            <a class="feedback__link feedback__link--next" href="#"><img class="feedback__navigation" src="img/icon-right-arrow.svg" alt=""></a>
+        <h2 class="section-title">Отзывы</h2>
+        <p class="feedback__content">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+        <div class="feedback__details-wrapper">
+            <h3 class="feedback__autor">Анастасия Красильникова</h3>
+            <a class="feedback__autor-email" href="#">@misssssiskras</a>
+            <div class="feedback__link-panel">
+                <a class="feedback__link feedback__link--prev" href="#"><img class="feedback__navigation" src="img/icon-left-arrow.svg" alt=""></a>
+                <a class="feedback__link feedback__link--next" href="#"><img class="feedback__navigation" src="img/icon-right-arrow.svg" alt=""></a>
+            </div>
+            <button class="feedback-order" type="submit">Написать</button>
         </div>
-        <button class="feedback-order" type="submit">Написать</button>
     </div>
     <div class="contacts">
-        <h2 class="section-title">Контакты</h2>
-        <ul class="contacts__addresses">
-            <li class="contacts__address contacts__email-address"><span class="contacts__details-name">e-mail:</span><span class="contacts__details-value"><a class="contacts__email" href="http://info@mimimishkashop.ru">info@mimimishkashop.ru</a></span></li>
-            <li class="contacts__address contacts__postal-address"><span class="contacts__details-name">адрес:</span><span class="contacts__details-value">г. Санкт-Петербург ул. Большая Конюшенная,д. 19/8, офис 101</span></li>
-        </ul>
-        <img class="map__image" src="img/map-mobile@1x.jpg" alt="">
+        <div class="contacts__wrapper">
+            <h2 class="section-title">Контакты</h2>
+            <ul class="contacts__addresses">
+                <li class="contacts__address contacts__email-address"><span class="contacts__details-name">e-mail:</span><span class="contacts__details-value"><a class="contacts__email" href="http://info@mimimishkashop.ru">info@mimimishkashop.ru</a></span></li>
+                <li class="contacts__address contacts__postal-address"><span class="contacts__details-name">адрес:</span><span class="contacts__details-value">г. Санкт-Петербург ул. Большая Конюшенная,д. 19/8, офис 101</span></li>
+            </ul>
+            <img class="map__image" src="img/map-mobile@1x.jpg" alt="">
+        </div>
         <button class="contacts-order" type="submit">Напишите нам</button>
     </div>
 </main>
