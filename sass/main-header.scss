@@ -1,5 +1,5 @@
 .main-header {
-  background: $gray-color url("/img/hero-mobile@1x.jpg") no-repeat top;
+  background: $gray-color url("../img/hero-mobile@1x.jpg") no-repeat top;
   padding-top: 90px;
   text-align: center;
 }
@@ -21,6 +21,11 @@
 }
 .catalog__link{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-height: 100px;
+
   width: 100%;
   text-align: left;
   text-decoration: none;
@@ -33,11 +38,14 @@
   }
 }
 .catalog__link-text-wrapper {
-  margin-left: 30px;
-  margin-top: 35px;
-  width: 100%;
+  padding-left: 30px;
+  padding-top: 25px;
+  align-self: flex-start;
   font-size: 18px;
   font-weight: bold;
+}
+.catalog__link-text-wrapper + .catalog__link-text-wrapper {
+  padding-top: 0;
 }
 .catalog-link__image {
   align-self: flex-end;

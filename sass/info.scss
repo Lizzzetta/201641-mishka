@@ -24,8 +24,12 @@
   .info__list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 420px;
   }
   .info__item {
     width: 50%;
+    display: block;
+    height: 140px;
   }
 }

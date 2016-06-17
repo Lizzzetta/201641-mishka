@@ -145,8 +145,8 @@
     width: 33%;
   }
   .catalog-product__image {
-    width: 315px;
-    height: 455px;
+    //width: 315px;
+    //height: 455px;
   }
   .catalog-product__name {
     padding-top: 30px;
@@ -173,6 +173,7 @@
     flex-wrap: wrap;
     height: 600px;
     justify-content: flex-start;
+    max-width: 1130px;
   }
   .process__title-wrapper {
     top: 145px;
