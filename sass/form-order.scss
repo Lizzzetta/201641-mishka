@@ -1,5 +1,8 @@
 .form-order {
   background: #ffffff;
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-order__type-list,
@@ -9,6 +12,7 @@
 .form-order__email-list,
 .form-order__additional-list{
   padding: 0;
+  margin: 0;
   list-style-type: none;
   font-weight: bold;
   label {
@@ -18,23 +22,115 @@
 
 .form-order__title-wrapper {
   background-color: $gray-color;
-  padding: 60px 20px;
-  text-align: center;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+}
+.form-order__title {
+  align-self: center;
+  font-size: 24px;
+}
+.form-order__desc {
+  font-family: opensans;
+  font-size: 14px;
 }
 
 .form-order__title-type,
 .form-order__title-color,
 .form-order__title-initials,
 .form-order__title-tel,
-.form-order__email,
-.form-order__additional {
+.form-order__title-email,
+.form-order__title-additional {
   color: $base-color;
   font-weight: bold;
+  font-family: opensans;
+  font-size: 16px;
+  display: flex;
+  &:after {
+    margin-left: 30px;
+    content: " ";
+    width: 100%;
+    height: 11px;
+    border-bottom: 1px solid $base-color;
+    display: inline-block;
+  }
+}
+.form-order__title-email-text-decorator {
+  min-width: 60px;
+}
+
+.form-order__label,
+.form-order__checkbox,
+.form-order__surname,
+.form-order__name,
+.form-order__patronymicname {
+  font-size: 16px;
+}
+
+.form-order__surname,
+.form-order__name,
+.form-order__patronymicname {
+  padding: 20px 0;
+}
+
+.form-order__initials-item,
+.form-order__tel-item,
+.form-order__email-item{
+  width: 100%;
+  div {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    height: 35px;
+  }
+}
+.form-order__number-wrapper,
+.form-order__email-wrapper {
+  display: flex;
+}
+.form-order__details {
+  height: 150px;
+  width: 100%;
+}
+.form-order__submit {
+  margin: 60px 0;
+  height: 55px;
+  width: 100%;
 }
 
 @media #{$tablet-widths} {
-  .form-order__type {
-    height: 100px;
+  .form-order__title-type,
+  .form-order__title-color,
+  .form-order__title-initials,
+  .form-order__title-tel,
+  .form-order__title-email,
+  .form-order__title-additional {
+    &:after {
+      display: none;
+    }
+  }
+
+  .form-order__type,
+  .form-order__color,
+  .form-order__initials,
+  .form-order__tel,
+  .form-order__email,
+  .form-order__additional {
+    padding: 60px 0;
+  }
+
+  .form-order__color,
+  .form-order__tel,
+  .form-order__email {
+    background-color: $gray-color;
+  }
+
+  .form-order__tel {
+    padding-bottom: 20px;
+  }
+  .form-order__email {
+    padding-top: 20px;
   }
 
   .form-order__type-list {
@@ -71,9 +167,14 @@
     }
   }
 
+  .form-order__number-item,
+  .form-order__email-item{
+    max-height: 40px;
+  }
+
   .form-order__number-wrapper,
   .form-order__email-wrapper{
-    display: flex;
+    max-height: 40px;
   }
 
   .form-order__additional {
@@ -92,6 +193,11 @@
     margin: 0;
     width: 120px;
   }
+
+  .form-order__submit {
+    width: 230px;
+    margin: 0;
+  }
 }
 
 @media #{$desktop-widths} {
@@ -99,7 +205,31 @@
     width: 33%;
   }
 
-  .order {
+  .form-order__submit {
     margin-left: 120px;
+  }
+
+  .form-order__title-type,
+  .form-order__title-color,
+  .form-order__title-initials,
+  .form-order__title-tel,
+  .form-order__title-email,
+  .form-order__title-email-text-decorator,
+  .form-order__title-additional {
+    width: auto;
+    align-self: center;
+  }
+
+  .form-order__title-type-wrapper,
+  .form-order__title-color-wrapper,
+  .form-order__title-initials-wrapper,
+  .form-order__title-tel-wrapper,
+  .form-order__title-email-wrapper,
+  .form-order__title-additional-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 120px;
+    float: left;
   }
 }
