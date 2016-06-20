@@ -5,23 +5,57 @@
 
 .section-title {
   margin: 0;
+  font-size: 24px;
 }
 .product__title {
   color: $base-color;
   font-weight: bold;
+  font-family: opensans;
+  font-size: 16px;
 }
 .product__options {
   list-style-type: none;
   padding: 0;
+  font-size: 14px;
+  font-family: opensans;
+}
+
+.product__option {
+  padding-bottom: 30px;
+}
+
+.product__option + .product__option {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 0;
+  padding-top: 10px;
+  height: 30px;
 }
 
 .product__option-name {
-  width: 80px;
+  min-width: 100px;
   display: inline-block;
 }
 .product__option-value {
   margin-right: auto;
   margin-left: auto;
+}
+.product__image {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+.product__order-wrapper {
+  text-align: center;
+}
+.product__price {
+  padding: 30px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.product__order {
+  width: 260px;
+  height: 50px;
 }
 @media #{$tablet-widths} {
   .product {
@@ -32,50 +66,74 @@
 
   .product-title__wrapper {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    //flex-direction: column;
     width: 100%;
-    height: 30px;
+    height: 45px;
   }
 
+  .section-title {
+    font-size: 40px;
+    width: 100%;
+  }
   .product__title {
     align-self: flex-end;
+    text-align: center;
   }
 
   .product-details__wrapper {
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    height: 315px;
+    height: 400px;
   }
 
   .product__options {
     width: 50%;
+    font-size: 16px;
   }
 
   .product__image {
     align-self: flex-end;
+    width: 335px;
+    height: 400px;
+  }
+
+  .product__order-wrapper {
+    width: 50%;
+    position: relative;
+    top: -130px;
   }
 
   .product__price {
-    position: relative;
-    align-self: flex-start;
-    top: -80px;
-  }
-
-  .product__order {
-    position: relative;
-    align-self: flex-start;
-    top: -80px;
+    font-size: 18px;
+    margin: 0;
   }
 }
 
 @media #{$desktop-widths} {
-  .section-title {
-    align-self: center;
+  .product-title__wrapper {
+    flex-direction: row-reverse;
+    height: 55px;
   }
+
+  .section-title {
+    font-size: 50px;
+  }
+
   .product__title {
-    align-self: flex-start;
+    padding: 0 39px;
+  }
+
+  .product__options,
+  .product__order-wrapper{
+    padding-left: 175px;
+    width: 350px;
+  }
+
+  .product__image {
+    width: 525px;
+    height: 400px;
   }
 }
