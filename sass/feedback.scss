@@ -45,9 +45,9 @@
   flex-direction: column;
 }
 @media #{$tablet-widths} {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  .feedback {
+    background: #ffffff url(../img/review@1x.jpg) left no-repeat;
+  }
 
   .section-title,
   .feedback__content,
