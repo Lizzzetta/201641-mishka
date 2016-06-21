@@ -37,6 +37,20 @@
   align-self: center;
 }
 
+.catalog-product__image {
+  width: 260px;
+  height: 195px;
+  background-size: cover;
+}
+.catalog-product__image--photo-1 {
+  background: url(../img/photo-1-mobile@1x.jpg) center no-repeat;
+}
+.catalog-product__image--photo-2 {
+  background: url(../img/photo-2-mobile@1x.jpg) center no-repeat;
+}
+.catalog-product__image--photo-3 {
+  background: url(../img/photo-3-mobile@1x.jpg) center no-repeat;
+}
 .catalog-product__options {
   font-family: opensans;
   font-size: 14px;
@@ -89,6 +103,27 @@
   width: 190px;
   height: 50px;
 }
+.process__image {
+  background: url(../img/video-mobile@1x.jpg) center no-repeat;
+  width: 260px;
+  height: 150px;
+  background-size: cover;
+}
+@media #{$retina} {
+  .catalog-product__image--photo-1 {
+    background-image: url(../img/photo-1-mobile@2x.jpg);
+  }
+  .catalog-product__image--photo-2 {
+    background-image: url(../img/photo-2-mobile@2x.jpg);
+  }
+  .catalog-product__image--photo-3 {
+    background-image: url(../img/photo-3-mobile@2x.jpg);
+  }
+  .process__image {
+    background-image: url(../img/video-mobile@2x.jpg);
+  }
+}
+
 @media #{$tablet-widths} {
   .catalog-product {
     display: flex;
@@ -98,8 +133,17 @@
     justify-content: flex-start;
   }
   .catalog-product__image {
-    width: 335px;
-    height: 335px;
+    width: 334px;
+    height: 334px;
+  }
+  .catalog-product__image--photo-1 {
+    background-image: url(../img/photo-1-tablet@1x.jpg);
+  }
+  .catalog-product__image--photo-2 {
+    background-image: url(../img/photo-2-tablet@1x.jpg);
+  }
+  .catalog-product__image--photo-3 {
+    background-image: url(../img/photo-3-tablet@1x.jpg);
   }
   .catalog-product__image,
   .catalog-product__name,
@@ -129,10 +173,26 @@
   .process__image {
     width: 670px;
     height: 455px;
+    background-image: url(../img/video-tablet@1x.jpg);
     padding-bottom: 35px;
   }
   .process-order {
     width: 100%;
+  }
+
+  @media #{$retina} {
+    .catalog-product__image--photo-1 {
+      background-image: url(../img/photo-1-tablet@2x.jpg);
+    }
+    .catalog-product__image--photo-2 {
+      background-image: url(../img/photo-2-tablet@2x.jpg);
+    }
+    .catalog-product__image--photo-3 {
+      background-image: url(../img/photo-3-tablet@2x.jpg);
+    }
+    .process__image {
+      background-image: url(../img/video-tablet@2x.jpg);
+    }
   }
 }
 @media #{$desktop-widths} {
@@ -145,8 +205,17 @@
     width: 33%;
   }
   .catalog-product__image {
-    //width: 315px;
-    //height: 455px;
+    width: 316px;
+    height: 462px;
+  }
+  .catalog-product__image--photo-1 {
+    background-image: url(../img/photo-1-desktop@1x.jpg);
+  }
+  .catalog-product__image--photo-2 {
+    background-image: url(../img/photo-2-desktop@1x.jpg);
+  }
+  .catalog-product__image--photo-3 {
+    background-image: url(../img/photo-3-desktop@1x.jpg);
   }
   .catalog-product__name {
     padding-top: 30px;
@@ -187,8 +256,9 @@
     padding: 0;
   }
   .process__image {
-    width: 680px;
+    width: 682px;
     height: 455px;
+    background-image: url(../img/video-desktop@1x.jpg);
     align-self: flex-start;
   }
   .process__desc {
@@ -198,5 +268,20 @@
   }
   .process-order {
     width: 230px;
+  }
+
+  @media #{$retina} {
+    .catalog-product__image--photo-1 {
+      background-image: url(../img/photo-1-desktop@2x.jpg);
+    }
+    .catalog-product__image--photo-2 {
+      background-image: url(../img/photo-2-desktop@2x.jpg);
+    }
+    .catalog-product__image--photo-3 {
+      background-image: url(../img/photo-3-desktop@2x.jpg);
+    }
+    .process__image {
+      background-image: url(../img/video-desktop@2x.jpg);
+    }
   }
 }
