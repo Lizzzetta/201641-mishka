@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<header class="page-header">
-    <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img/logo-mobile.svg" alt="MISHKA"></a>
+<header class="page-header menu-opened">
+    <a class="page-header__logo" href="#"><div class="page-header__logo-image" ></div></a>
     <div class="page-header__menu-trigger">
-        <span class="page-header__menu-trigger--decor"></span>
     </div>
     <nav class="header-menu">
         <ul class="header-menu__list">
@@ -64,39 +64,39 @@
         </div>
         <ul class="form-order__color-list">
             <li class="form-order__color-item">
-                <label class="form-order__checkbox">
+                <label class="form-order__checkbox-label">
                 <input name="color" type="checkbox" class="form-order__checkbox form-order__checkbox--white">
-                <span class="form-order__checkbox">Белый</span>
+                <span class="form-order__label">Белый</span>
                 </label>
             </li>
             <li class="form-order__color-item">
-                <label class="form-order__checkbox">
+                <label class="form-order__checkbox-label">
                 <input name="color" type="checkbox" class="form-order__checkbox form-order__checkbox--gray">
-                <span class="form-order__checkbox">Серый</span>
+                <span class="form-order__label">Серый</span>
                 </label>
             </li>
             <li class="form-order__color-item">
-                <label class="form-order__checkbox">
+                <label class="form-order__checkbox-label">
                 <input name="color" type="checkbox" class="form-order__checkbox form-order__checkbox--tiffany">
-                <span class="form-order__checkbox">"Тиффани"</span>
+                <span class="form-order__label">"Тиффани"</span>
                 </label>
             </li>
             <li class="form-order__color-item">
-                <label class="form-order__checkbox">
+                <label class="form-order__checkbox-label">
                 <input name="color" type="checkbox" class="form-order__checkbox form-order__checkbox--black">
-                <span class="form-order__checkbox">Черный</span>
+                <span class="form-order__label">Черный</span>
                 </label>
             </li>
             <li class="form-order__color-item">
-                <label class="form-order__checkbox">
+                <label class="form-order__checkbox-label">
                 <input name="color" type="checkbox" class="form-order__checkbox form-order__checkbox--pink">
-                <span class="form-order__checkbox">Розовый</span>
+                <span class="form-order__label">Розовый</span>
                 </label>
             </li>
             <li class="form-order__color-item">
-                <label class="form-order__checkbox">
+                <label class="form-order__checkbox-label">
                 <input name="color" type="checkbox" class="form-order__checkbox form-order__checkbox--orange">
-                <span class="form-order__checkbox">Оранжевый</span>
+                <span class="form-order__label">Оранжевый</span>
                 </label>
             </li>
         </ul>
@@ -167,11 +167,11 @@
 </main>
 
 <footer class="page-footer">
-    <img class="page-footer__logo-image" src="img/logo-mobile.svg" alt="MISHKA">
-    <a class="page-footer__link" href="#"><img class="social" src="img/icon-insta.svg" alt=""></a>
-    <a class="page-footer__link" href="#"><img class="social" src="img/icon-fb.svg" alt=""></a>
-    <a class="page-footer__link" href="#"><img class="social" src="img/icon-twitter.svg" alt=""></a>
-    <div class="developer-text">Разработано<img class="developer-logo" src="img/logo-htmlacademy.svg" alt="HTML-academy"></div>
+    <div class="page-footer__logo-image"></div>
+    <a class="page-footer__link" href="#"><div class="social social-insta"></div></a>
+    <a class="page-footer__link" href="#"><div class="social social-fb"></div></a>
+    <a class="page-footer__link" href="#"><div class="social social-twitter"></div></a>
+    <div class="developer-text">Разработано<div class="developer-logo"></div></div>
 </footer>
 
 </body>

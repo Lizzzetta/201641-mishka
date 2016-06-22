@@ -2,16 +2,83 @@
   background-color: $gray-color;
   text-align: center;
   padding: 20px 0;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .page-footer__logo-image {
   display: none;
+  background-color: #000000;
+  mask: url(../img/logo-footer.svg) center no-repeat;
+  width: 102px;
+  height: 35px;
+
+  &:hover {
+    background-color: $base-color;
+  }
+
+  &:active {
+    background-color: $base-color;
+    opacity: 0.6;
+  }
+}
+
+.social {
+  background-color: #000000;
+  width: 25px;
+  height: 30px;
+
+  &:hover {
+    background-color: $base-color;
+  }
+
+  &:active {
+    background-color: $base-color;
+    opacity: 0.6;
+  }
+}
+
+.social-insta {
+  mask: url(../img/icon-insta.svg) center no-repeat;
+}
+.social-fb {
+  mask: url(../img/icon-fb.svg) center no-repeat;
+}
+.social-twitter {
+  mask: url(../img/icon-twitter.svg) center no-repeat;
 }
 
 .page-footer__link {
   margin: 0 10px;
 }
+
+
+.developer-text {
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    .developer-logo {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 .developer-logo {
   margin-left: 10px;
+  background-color: $base-color;
+  opacity: 0.6;
+  mask: url(../img/htmlacademy.svg) top no-repeat;
+  width: 30px;
+  height: 40px;
 }
 @media #{$tablet-widths} {
   .page-footer__logo-image {
@@ -22,13 +89,11 @@
 
   .page-footer {
     width: 100%;
-    display: flex;
-    justify-content: center;
   }
 
   .developer-text {
     position: absolute;
     right: 20px;
-    display: flex;
+    width: auto;
   }
 }

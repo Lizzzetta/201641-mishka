@@ -16,7 +16,7 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-  font-family: opensans;
+  font-family: $opensans-font-family;
   font-size: 14px;
 }
 .contacts__address {
@@ -35,6 +35,13 @@
   }
   &:link {
     color: #000000;
+  }
+  &:hover {
+    color: $base-color;
+  }
+  &:active {
+    color: $base-color;
+    opacity: 0.3;
   }
   border-bottom: 1px solid $base-color;
 }

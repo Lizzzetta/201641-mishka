@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 .feedback__content {
-  font-family: opensans;
+  font-family: $opensans-font-family;
   font-size: 14px;
   line-height: 30px;
 }
@@ -14,7 +14,7 @@
 }
 .feedback__autor-email {
   text-decoration: none;
-  font-family: opensans;
+  font-family: $opensans-font-family;
   font-size: 14px;
   color: #000000;
   &:visited {
@@ -33,6 +33,12 @@
 }
 .feedback__link {
   margin: 0 30px;
+}
+.feedback__link:hover {
+  opacity: 0.6;
+}
+.feedback__link:active {
+  opacity: 0.3;
 }
 .feedback-order {
   width: 260px;

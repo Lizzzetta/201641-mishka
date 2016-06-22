@@ -10,14 +10,14 @@
 .product__title {
   color: $base-color;
   font-weight: bold;
-  font-family: opensans;
+  font-family: $opensans-font-family;
   font-size: 16px;
 }
 .product__options {
   list-style-type: none;
   padding: 0;
   font-size: 14px;
-  font-family: opensans;
+  font-family: $opensans-font-family;
 }
 
 .product__option {

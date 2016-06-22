@@ -30,7 +30,7 @@
   font-size: 24px;
 }
 .form-order__desc {
-  font-family: opensans;
+  font-family: $opensans-font-family;
   font-size: 14px;
   padding: 0 30px;
 }
@@ -43,7 +43,7 @@
 .form-order__title-additional {
   color: $base-color;
   font-weight: bold;
-  font-family: opensans;
+  font-family: $opensans-font-family;
   font-size: 16px;
   display: flex;
   &:after {
@@ -60,7 +60,6 @@
 }
 
 .form-order__label,
-.form-order__checkbox,
 .form-order__surname,
 .form-order__name,
 .form-order__patronymicname {
@@ -117,6 +116,84 @@
 .field-icon--mail {
   background: $base-color;
   mask: url(../img/icon-mail.svg) center no-repeat;
+}
+
+.form-order__type-item,
+.form-order__color-item{
+  display: flex;
+  height: 70px;
+}
+
+.form-order__label {
+  align-self: center;
+  padding-left: 70px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.form-order__label:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 2px solid #444444;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+.form-order__label:hover {
+  &:before {
+    border-color: $base-color;
+  }
+}
+
+.form-order__label:active {
+  &:before {
+    border-color: lightgray;
+  }
+}
+
+.form-order__type-radiobutton {
+  position: relative;
+
+  .form-order__radiobtn {
+    display: none;
+  }
+
+  .form-order__label:before {
+    border-radius: 50%;
+  }
+
+  .form-order__radiobtn:checked + .form-order__label:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: $base-color;
+    position: absolute;
+    left: 17px;
+    top: 17px;
+    border-radius: 50%;
+  }
+}
+
+.form-order__checkbox-label {
+  position: relative;
+
+  .form-order__checkbox {
+    display: none;
+  }
+
+  .form-order__checkbox:checked + .form-order__label:after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: url(../img/icon-tick.svg) center no-repeat;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+  }
 }
 
 @media #{$tablet-widths} {

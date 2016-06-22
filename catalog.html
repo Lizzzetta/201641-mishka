@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<header class="page-header">
-    <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img/logo-mobile.svg" alt="MISHKA"></a>
+<header class="page-header menu-opened">
+    <a class="page-header__logo" href="#"><div class="page-header__logo-image" ></div></a>
     <div class="page-header__menu-trigger">
-        <span class="page-header__menu-trigger--decor"></span>
     </div>
     <nav class="header-menu">
         <ul class="header-menu__list">
@@ -77,10 +77,10 @@
     </ul>
     <div class="process">
         <div class="process__title-wrapper">
-            <img class="process__title-icon" src="img/icon-video.svg" alt="">
+            <div class="process__title-icon"></div>
             <h2 class="process__title">Процесс производства</h2>
         </div>
-        <a class="process__image-link" href="#"><div class="process__image"></div></a>
+        <a class="process__image-link" href="#"><div class="process__image"><img class="process__image--play" src="img/icon-play.svg" alt=""></div></a>
 
         <p class="process__desc">Пo просьбам наших любых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <button class="process-order" type="submit">СДЕЛАТЬ ЗАКАЗ</button>
@@ -88,11 +88,11 @@
 </main>
 
 <footer class="page-footer">
-    <img class="page-footer__logo-image" src="img/logo-mobile.svg" alt="MISHKA">
-    <a class="page-footer__link" href="#"><img class="social" src="img/icon-insta.svg" alt=""></a>
-    <a class="page-footer__link" href="#"><img class="social" src="img/icon-fb.svg" alt=""></a>
-    <a class="page-footer__link" href="#"><img class="social" src="img/icon-twitter.svg" alt=""></a>
-    <div class="developer-text">Разработано<img class="developer-logo" src="img/logo-htmlacademy.svg" alt="HTML-academy"></div>
+    <div class="page-footer__logo-image"></div>
+    <a class="page-footer__link" href="#"><div class="social social-insta"></div></a>
+    <a class="page-footer__link" href="#"><div class="social social-fb"></div></a>
+    <a class="page-footer__link" href="#"><div class="social social-twitter"></div></a>
+    <div class="developer-text">Разработано<div class="developer-logo"></div></div>
 </footer>
 
 </body>
