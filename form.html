@@ -134,7 +134,7 @@
             <li class="form-order__tel-item">
                 <label class="form-order__number" for="tel"></label>
                 <div class="form-order__number-wrapper">
-                    <input type="tel" id="tel" placeholder="+7 XXX XX XX"><div class="field-icon field-icon--phone" src="" alt=""></div>
+                    <input type="tel" id="tel" placeholder="+7 XXX XX XX" pattern="\+7 [0-9]{3} [0-9]{2} [0-9]{2}"><div class="field-icon field-icon--phone"></div>
                 </div>
             </li>
         </ul>
@@ -147,7 +147,7 @@
             <li class="form-order__email-item">
                 <label class="form-order__email" for="email"></label>
                 <div class="form-order__email-wrapper">
-                    <input type="email" id="email" placeholder="Ваш e-mail"><div class="field-icon field-icon--mail" src="img/icon-mail.svg" alt=""></div>
+                    <input type="email" id="email" placeholder="Ваш e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><div class="field-icon field-icon--mail"></div>
                 </div>
             </li>
         </ul>
@@ -163,7 +163,7 @@
             </li>
         </ul>
     </div>
-    <button class="form-order__submit" type="submit">Отправить заказ</button>
+    <button class="form-order__submit" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
 </main>
 
 <footer class="page-footer">

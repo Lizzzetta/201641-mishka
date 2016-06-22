@@ -2,3 +2,58 @@ body {
   font-family: Verdana; //opensans, Tahoma,
   //background: blue;
 margin: 0;}
+
+button {
+  background: none;
+  border: 2px solid $buttons-color;
+  font-family: opensans;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: $buttons-color;
+  color: #ffffff;
+}
+
+button:active {
+  background: $buttons-color;
+  color: $button-active-color;
+}
+
+input {
+  border: none;
+  background: none;
+  border-bottom: 2px solid $buttons-color;
+  font-size: 18px;
+}
+
+input:hover {
+  border-bottom-color: $base-color;
+}
+
+input:focus {
+  border-bottom-color: $base-color;
+}
+
+input:invalid {
+  border-bottom-color: #f0b1b1;
+}
+
+textarea {
+  border: 2px solid $buttons-color;
+  font-size: 18px;
+
+}
+
+textarea:hover {
+  border-color: $base-color;
+}
+
+textarea:focus {
+  border-color: $base-color;
+}
+
+textarea:invalid {
+  border-color: #f0b1b1;
+}

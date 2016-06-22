@@ -21,6 +21,7 @@
 }
 .catalog-product__name {
   font-size: 16px;
+  min-height: 44px;
 }
 .catalog-product {
   display: flex;
@@ -69,9 +70,26 @@
   align-self: flex-start;
   font-size: 14px;
   font-weight: bold;
+  width: 100%;
 }
 .catalog-product__submit {
   align-self: flex-end;
+  border: none;
+  padding: 0;
+  background: #000000;
+  opacity: 0.2;
+  mask: url(../img/icon-cart.svg) center no-repeat;
+  width: 21px;
+  height: 21px;
+}
+.catalog-product__submit:hover {
+  background: $base-color;
+  opacity: 1;
+}
+
+.catalog-product__submit:active{
+  background: $base-color;
+  opacity: 0.7;
 }
 
 .process {
