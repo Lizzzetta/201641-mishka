@@ -31,12 +31,22 @@
 .page-header__logo {
   display: flex;
   justify-content: center;
+  z-index: 2;
 }
 
 .page-header__logo-image {
   height: 80px;
   width: 120px;
   background: url(../img/logo-mobile.svg) center no-repeat;
+  z-index: 4;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header-menu {
@@ -48,6 +58,7 @@
   padding: 0;
   margin: 0;
   text-align: left;
+  z-index: 1;
 }
 
 .header-menu__item {
@@ -71,6 +82,8 @@
 
 .header-menu__item--search {
   padding-left: 0;
+  cursor: pointer;
+  z-index: 3;
 
   &::before {
     background: lightgray;
@@ -79,6 +92,7 @@
     width: 90px;
     height: 18px;
     display: inline-block;
+    cursor: pointer;
   }
 }
 
@@ -99,6 +113,7 @@
 
 .header-menu__item--cart {
   padding-left: 0;
+  z-index: 3;
 }
 
 .header-menu__item--cart::before {
@@ -108,6 +123,7 @@
   width: 90px;
   height: 18px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .header-menu__link {
@@ -185,7 +201,7 @@
     border-right: 1px solid lightgray;
   }
 
-  .header-menu__link--search--text-wrapper {
+  .header-menu__link--search-text-wrapper {
     display: none;
   }
 
