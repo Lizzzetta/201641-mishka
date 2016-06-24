@@ -111,12 +111,34 @@
   right: 10px;
 }
 .field-icon--phone {
-  background: $base-color;
+  background: lightgray;
   mask: url(../img/icon-phone.svg) center no-repeat;
 }
+.form-order__tel-item:hover {
+  .field-icon--phone {
+    background-color: $base-color;
+  }
+}
+.form-order__tel-input:focus + .field-icon--phone {
+  background-color: $base-color;
+}
+.form-order__tel-input:invalid + .field-icon--phone {
+  background-color: lightgray;
+}
 .field-icon--mail {
-  background: $base-color;
+  background: lightgray;
   mask: url(../img/icon-mail.svg) center no-repeat;
+}
+.form-order__email-item:hover {
+  .field-icon--mail {
+    background-color: $base-color;
+  }
+}
+.form-order__email-input:focus + .field-icon--mail {
+  background-color: $base-color;
+}
+.form-order__email-input:invalid + .field-icon--mail {
+  background-color: lightgray;
 }
 
 .form-order__type-item,
@@ -320,6 +342,7 @@
     float: right;
     font-family: $opensans-font-family;
     font-size: 16px;
+    line-height: 55px;
   }
 }
 

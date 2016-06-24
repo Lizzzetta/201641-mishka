@@ -27,6 +27,7 @@ input {
   background: none;
   border-bottom: 2px solid $buttons-color;
   font-size: 18px;
+  padding-left: 20px;
 }
 
 input:hover {
@@ -44,6 +45,7 @@ input:invalid {
 textarea {
   border: 2px solid $buttons-color;
   font-size: 18px;
+  padding: 15px 20px;
 
 }
 

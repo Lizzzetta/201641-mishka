@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  min-height: 140px;
 }
 .page-footer__logo-image {
   display: none;
@@ -94,20 +95,23 @@
   height: 40px;
 }
 @media #{$tablet-widths} {
+  .page-footer {
+    align-content: center;
+    flex-direction: row;
+  }
   .page-footer__logo-image {
     display: block;
-    position: absolute;
-    left: 20px;
     align-self: center;
   }
 
   .page-footer__links {
     border: none;
+    width: auto;
+    flex-grow: 1;
   }
 
   .developer-text {
-    position: absolute;
-    right: 20px;
     width: auto;
+    align-self: center;
   }
 }
