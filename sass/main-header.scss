@@ -87,15 +87,12 @@
   margin-right: 30px;
   width: 60px;
   height: 70px;
-  background: $dark-base-color;
-}
-
-.catalog-link__image--interior {
-  mask: url(../img/icon-interior.svg) center no-repeat;
-}
-
-.catalog-link__image--toy {
-  mask: url(../img/icon-toy.svg) center no-repeat;
+  svg {
+    width: 60px;
+  }
+  svg path {
+    fill: $dark-base-color;
+  }
 }
 
 .catalog__item--objects {

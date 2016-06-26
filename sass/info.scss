@@ -13,25 +13,9 @@
   height: 45px;
   width: 50px;
   display: flex;
-  background: $base-color;
-}
-.info__image--feature-1 {
-  mask: url(../img/icon-feature-1.svg) center top no-repeat;
-}
-.info__image--feature-2 {
-  mask: url(../img/icon-feature-2.svg) center top no-repeat;
-}
-.info__image--feature-3 {
-  mask: url(../img/icon-feature-3.svg) center top no-repeat;
-}
-.info__image--feature-4 {
-  mask: url(../img/icon-feature-4.svg) center top no-repeat;
-}
-.info__image--feature-5 {
-  mask: url(../img/icon-feature-5.svg) center top no-repeat;
-}
-.info__image--feature-6 {
-  mask: url(../img/icon-feature-6.svg) center top no-repeat;
+  svg path {
+    fill: $base-color;
+  }
 }
 .info__text {
   display: inline-block;
