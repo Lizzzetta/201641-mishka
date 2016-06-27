@@ -4,17 +4,17 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync");
-
-var del = require('del');
 var gutil = require('gulp-util');
-var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
+
+var autoprefixer = require("autoprefixer");
+var server = require("browser-sync");
+var del = require('del');
+var mqpacker = require("css-mqpacker");
 var run = require("run-sequence");
 
 gulp.task("style", function() {
