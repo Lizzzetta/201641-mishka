@@ -1,20 +1,25 @@
 .feedback {
   background: #ffffff;
-  padding: 30px;
+  padding: 15px 30px 45px 30px;
   display: flex;
   flex-direction: column;
+
+  border-bottom: 6px solid;
+  border-image: url(../img/bg-zigzag-line.svg) 34 repeat;
 }
 .feedback__content {
-  font-family: opensans;
+  font-family: $opensans-font-family;
   font-size: 14px;
   line-height: 30px;
+  padding-top: 15px;
 }
 .feedback__autor {
   font-size: 14px;
+  line-height: 14px;
 }
 .feedback__autor-email {
   text-decoration: none;
-  font-family: opensans;
+  font-family: $opensans-font-family;
   font-size: 14px;
   color: #000000;
   &:visited {
@@ -30,9 +35,22 @@
   align-self: center;
   display: flex;
   justify-content: center;
+  padding: 30px 0 40px 0;
 }
 .feedback__link {
-  margin: 0 30px;
+  //padding: 0 30px;
+  align-self: center;
+  border: 1px solid lightgray;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.feedback__link:hover {
+  opacity: 0.6;
+}
+.feedback__link:active {
+  opacity: 0.3;
 }
 .feedback-order {
   width: 260px;
@@ -46,7 +64,19 @@
 }
 @media #{$tablet-widths} {
   .feedback {
-    background: #ffffff url(../img/review@1x.jpg) left no-repeat;
+    background: #ffffff url(../img/review@1x.jpg) left top no-repeat;
+
+    margin-top: 5px;
+    padding: 50px;
+    padding-bottom: 120px;
+    border-bottom: 17px solid;
+    border-image: url(../img/bg-zigzag-line.svg) 34 repeat;
+
+    .section-title {
+      padding-top: 40px;
+    }
+
+    position: relative;
   }
 
   .section-title,
@@ -56,8 +86,16 @@
   }
 
   .feedback__content {
-    padding-top: 50px;
+    padding-top: 65px;
     min-height: 60px;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .feedback__autor,
+  .feedback__autor-email{
+    font-size: 16px;
+    line-height: 14px;
   }
 
   .feedback__autor-email {
@@ -68,18 +106,47 @@
     padding: 0;
     align-self: flex-end;
     position: relative;
-    top: -40px;
+    top: -50px;
+    width: 170px;
+  }
+
+  .feedback__link {
+    border: none;
   }
 
   .feedback-order {
     align-self: flex-end;
-    position: relative;
-    top: -300px;
+    position: absolute;
+    top: 82px;
+    right: 50px;
+    width: 175px;
   }
 }
 
 @media #{$desktop-widths} {
+  .feedback {
+    margin-top: 20px;
+    padding-left: 225px;
+    background-position: 50px top;
+    border-bottom: 23px solid;
+
+    .section-title {
+      font-size: 50px;
+      padding-top: 30px;
+    }
+  }
+
   .feedback__content {
     max-width: 700px;
+    font-size: 16px;
+  }
+
+  .feedback__link-panel {
+    top: -45px;
+  }
+
+  .feedback-order {
+    top: 77px;
+    right: 50px;
   }
 }
