@@ -10,6 +10,7 @@ button {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  color: $buttons-color;
 }
 
 button:hover {
@@ -27,7 +28,19 @@ input {
   background: none;
   border-bottom: 2px solid $buttons-color;
   font-size: 18px;
-  //padding-left: 20px;
+  font-family: $verdana-font-family;
+  &::-webkit-input-placeholder {
+    color: $buttons-color;
+    opacity: 0.3;
+  }
+  &:-moz-placeholder {
+    color: $buttons-color;
+    opacity: 0.3;
+  }
+  &:-ms-input-placeholder {
+    color: $buttons-color;
+    opacity: 0.3;
+  }
 }
 
 input:hover {
@@ -46,7 +59,19 @@ textarea {
   border: 2px solid $buttons-color;
   font-size: 18px;
   padding: 15px ;
-
+  font-family: $verdana-font-family;
+  &::-webkit-input-placeholder {
+    color: $buttons-color;
+    opacity: 0.3;
+  }
+  &:-moz-placeholder {
+    color: $buttons-color;
+    opacity: 0.3;
+  }
+  &:-ms-input-placeholder {
+    color: $buttons-color;
+    opacity: 0.3;
+  }
 }
 
 textarea:hover {

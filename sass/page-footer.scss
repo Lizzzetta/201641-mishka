@@ -99,14 +99,16 @@
   .page-footer {
     align-content: center;
     flex-direction: row;
+    flex-wrap: nowrap;
     padding: 0 50px;
     position: relative;
   }
   .page-footer__logo-image {
     display: flex;
-    position: absolute;
     left: 50px;
-    top: 25px;
+    padding-top: 25px;
+    width: 190px;
+    justify-content: flex-start;
   }
 
   .page-footer__links {
@@ -115,12 +117,11 @@
     flex-grow: 1;
     align-self: center;
     height: 140px;
+    margin: 0 auto;
   }
 
   .developer-text {
-    width: auto;
-    position: absolute;
-    right: 45px;
-    top: 30px;
+    width: 190px;
+    padding-top: 30px;
   }
 }
