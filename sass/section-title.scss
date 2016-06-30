@@ -1,0 +1,19 @@
+.section-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  margin-right: -1px; //because text don't fit in line in mobile version with 320px width
+}
+
+@media #{$tablet-widths} {
+  .section-title {
+    font-size: 40px;
+    width: 100%;
+  }
+}
+
+@media #{$desktop-widths} {
+  .section-title {
+    font-size: 50px;
+  }
+}

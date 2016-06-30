@@ -85,3 +85,9 @@ textarea:focus {
 textarea:invalid {
   border-color: #f0b1b1;
 }
+
+@media #{$tablet-widths} {
+  input {
+    padding-left: 20px;
+  }
+}

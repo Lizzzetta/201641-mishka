@@ -72,6 +72,7 @@
     height: 11px;
     border-bottom: 1px solid $base-color;
     display: inline-block;
+    vertical-align: baseline;
   }
 }
 .form-order__title-email-text-decorator {
@@ -216,6 +217,7 @@
   height: 35px;
   border: 2px solid #444444;
   display: inline-block;
+  vertical-align: baseline;
   position: absolute;
   left: 0;
   top: -7px;
@@ -251,6 +253,7 @@
     width: 15px;
     height: 15px;
     display: inline-block;
+    vertical-align: baseline;
     background-color: $base-color;
     position: absolute;
     left: 12px;
@@ -271,6 +274,7 @@
     width: 20px;
     height: 20px;
     display: inline-block;
+    vertical-align: baseline;
     background: url(../img/icon-tick.svg) center no-repeat;
     background-size: cover;
     position: absolute;
@@ -289,10 +293,6 @@
 }
 
 @media #{$tablet-widths} {
-  input {
-    padding-left: 20px;
-  }
-
   .form-order {
     margin: 0 50px;
   }
@@ -314,6 +314,7 @@
   }
   .form-order__desc-wrapper {
     display: inline-block;
+    vertical-align: baseline;
     width: 100%;
     font-size: 16px;
     line-height: 30px;
