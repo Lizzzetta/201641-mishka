@@ -1,12 +1,13 @@
 body {
-  font-family: $verdana-font-family; //opensans, Tahoma,
-  //background: blue;
-margin: 0;}
+  font-family: $verdana-font-family;
+  color: #000;
+  margin: 0;
+}
 
 button {
   background: none;
   border: 2px solid $buttons-color;
-  font-family: opensans;
+  font-family: $opensans-font-family;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;

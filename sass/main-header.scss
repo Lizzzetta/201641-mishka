@@ -33,9 +33,10 @@
 
   .main-header__zigzag-bottom {
     display: block;
-    border-bottom: 23px solid;
+    border: 0;
+    border-bottom: 23px solid #fff;
     border-image: url(../img/bg-zigzag-fill.svg) 34 repeat;
-    height: 34px;
+    //height: 34px;
     width: 100%;
     margin: 0 -50px;
     position: absolute;
