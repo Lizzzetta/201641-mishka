@@ -136,7 +136,7 @@
   .header-menu__item--logo {
     padding-left: 50px;
     flex-grow: 3;
-    min-width: 300px;
+    min-width: 280px;
     border: none;
     border-bottom: 1px solid #ececec;
     height: 88px;
@@ -202,9 +202,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
+    padding-left: 33px;
     svg {
-      padding-left: 33px;
+      //padding-left: 33px;
       //width: 55px;
       margin: 0;
     }
@@ -229,9 +229,9 @@
     }
   }
 }
-@media (min-width: 970px) {
+@media (min-width: 950px) {
   .header-menu__item--logo {
-    min-width: 490px;
+    min-width: 465px;
   }
 }
 @media #{$desktop-widths} {

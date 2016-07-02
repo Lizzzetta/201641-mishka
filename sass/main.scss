@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+div {
+  border: 0;
+}
+
 button {
   background: none;
   border: 2px solid $buttons-color;
